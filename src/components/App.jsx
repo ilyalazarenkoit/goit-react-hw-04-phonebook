@@ -19,7 +19,7 @@ export const App = () => {
       alert(`${contact.name} is already in contacts`);
       return;
     }
-    setContacts(prevContacts => (prevContacts = [...prevContacts, contact]));
+    setContacts(prevContacts => [...prevContacts, contact]);
   };
 
   const doFiltration = e => {
